@@ -1,39 +1,7 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "patches": [
-    {
-      "name": "App label: 1.1.1.1",
-      "description": "Replaces the manifest's @string/four_ones label with the literal \"1.1.1.1\", so Morphe Manager and package parsers show the app name instead of the raw resource reference.",
-      "default": true,
-      "compatiblePackages": [
-        {
-          "packageName": "com.cloudflare.onedotonedotonedotone",
-          "name": "1.1.1.1",
-          "description": null,
-          "apkFileType": "APKM",
-          "appIconColor": "#F06C6C",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "6.38.9",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            },
-            {
-              "version": "6.38.11",
-              "versionCodes": null,
-              "isExperimental": true,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
     {
       "name": "Spoof WARP+ Unlimited UI",
       "description": "Forces the account type to WARP+ UNLIMITED on every AccountData instance, so the app displays the WARP+ Unlimited interface.",

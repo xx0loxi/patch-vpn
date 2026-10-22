@@ -1,7 +1,7 @@
 {
-  "version": "1.0.2",
-  "created_at": "2026-10-22T20:25:20",
-  "description": "### WARP Patches (v1.0.2)\n\n* **App label: 1.1.1.1**: Writes the literal \"1.1.1.1\" into the manifest instead of the raw `@string/four_ones` reference, so Morphe Manager and package parsers show the app name correctly\n* **Spoof WARP+ Unlimited UI**: Forces the account type to WARP+ UNLIMITED so the app displays the WARP+ Unlimited interface. This is a client-side UI change only; the real WARP+ entitlement is issued and enforced by Cloudflare's servers\n* **Working APK download link**: 6.38.9 is the recommended version because Morphe Manager resolves it directly to APKMirror\n* **6.38.11 support**: Still patchable as an experimental target (the Manager download API points 6.38.11 at a dead Uptodown page)\n\nSupports 1.1.1.1 + WARP: Safer Internet v6.38.9 (recommended) and v6.38.11 (experimental), APKM.",
-  "download_url": "https://raw.githubusercontent.com/xx0loxi/patch-vpn/main/patches/patches-1.0.2.mpp",
+  "version": "1.0.3",
+  "created_at": "2026-10-22T20:50:08",
+  "description": "### WARP Patches (v1.0.3)\n\n* **Spoof WARP+ Unlimited UI**: Forces the account type to WARP+ UNLIMITED so the app displays the WARP+ Unlimited interface\n* **Working APK download link**: 6.38.9 is the recommended version because Morphe Manager resolves it directly to APKMirror\n* **6.38.11 support**: Still patchable as an experimental target (the Manager download API points 6.38.11 at a dead Uptodown page)\n\nSupports 1.1.1.1 + WARP: Safer Internet v6.38.9 (recommended) and v6.38.11 (experimental), APKM.",
+  "download_url": "https://raw.githubusercontent.com/xx0loxi/patch-vpn/main/patches/patches-1.0.3.mpp",
   "signature_download_url": ""
 }
