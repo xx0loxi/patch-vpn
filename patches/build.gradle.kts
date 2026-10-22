@@ -3,14 +3,19 @@ group = "app.template"
 patches {
     // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "WARP Patches"
+        description = "Patches for Cloudflare 1.1.1.1 + WARP."
+        source = "https://github.com/xx0loxi/patch-vpn"
+        author = "xx0loxi"
+        contact = "https://github.com/xx0loxi/patch-vpn/issues"
+        website = "https://github.com/xx0loxi/patch-vpn"
         license = "GPLv3"
     }
+}
+
+// Morphe patch API relies on Kotlin context parameters.
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    compilerOptions.freeCompilerArgs.add("-Xcontext-parameters")
 }
 
 // Separate configuration so gson is available at runtime for the

@@ -116,6 +116,9 @@ gradle-app.setting
 # Potentially copyrighted test APK
 *.apk
 
+# Local build/reverse-engineering artifacts
+output/
+
 # Ignore vscode config
 .vscode/
 

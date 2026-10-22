@@ -6,6 +6,18 @@ import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.SupportedAbi
 
 object Constants {
+    val WARP_COMPATIBILITY = Compatibility(
+        name = "1.1.1.1 + WARP: Safer Internet",
+        packageName = "com.cloudflare.onedotonedotonedotone",
+        apkFileType = ApkFileType.APKM,
+        appIconColor = 0xF06C6C,
+        targets = listOf(
+            AppTarget(
+                version = "6.38.11"
+            )
+        )
+    )
+
     val COMPATIBILITY_EXAMPLE = Compatibility(
         name = "XYZ app", // App name as it appears in the Android launcher.
         packageName = "com.example.app",
