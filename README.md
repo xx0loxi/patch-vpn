@@ -1,16 +1,14 @@
-# 👋🧩 Morphe Patches template
+# 👋🧩 WARP Patches
 
-Template repository for Morphe Patches.
+Morphe patches for Cloudflare 1.1.1.1 + WARP: Safer Internet.
 
 ## ❓ About
 
-Patches for apps I like.
-
-<!-- TODO: Update this about section with a brief introduction/summary about this repo and what it offers. -->
+Patches for Cloudflare 1.1.1.1 + WARP (`com.cloudflare.onedotonedotonedotone`).
 
 ### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+Click here to add these patches to Morphe: https://morphe.software/add-source?github=xx0loxi/patch-vpn
 
 ## 🩹 Patches list
 
@@ -88,4 +86,4 @@ See the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation
 
 ## 📜 License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+xx0loxi WARP Patches are licensed under the [GNU General Public License v3.0](LICENSE)

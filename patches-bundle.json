@@ -1,7 +1,7 @@
 {
-  "created_at": "",
-  "description": "",
-  "download_url": "",
-  "signature_download_url": "",
-  "version": ""
+  "version": "1.0.0",
+  "created_at": "2026-10-22T19:49:27",
+  "description": "### WARP Patches (v1.0.0)\n\n* **Spoof WARP+ Unlimited UI**: Forces the account type of every AccountData instance to WARP+ UNLIMITED, so the app displays the WARP+ Unlimited interface\n* **Morphe Manager Listing**: The patch is selectable in Morphe Manager for the supported app version\n\nSupports 1.1.1.1 + WARP: Safer Internet v6.38.11 (APKM).",
+  "download_url": "https://raw.githubusercontent.com/xx0loxi/patch-vpn/main/patches/patches-1.0.0.mpp",
+  "signature_download_url": ""
 }
