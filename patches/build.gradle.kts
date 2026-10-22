@@ -53,16 +53,6 @@ tasks {
         destinationDirectory.set(layout.projectDirectory)
     }
 
-    // Keep the metadata copies next to the published bundle, as in the
-    // upstream/GBoard layout.
-    register<Copy>("syncPublishedMetadata") {
-        description = "Copies patches-bundle.json and patches-list.json into patches/."
-        from(rootProject.file("patches-bundle.json"))
-        from(rootProject.file("patches-list.json"))
-        into(layout.projectDirectory)
-        outputs.upToDateWhen { false }
-    }
-
     // Used by gradle-semantic-release-plugin.
     publish {
         dependsOn("generatePatchesList")
@@ -70,6 +60,6 @@ tasks {
 
     named("buildAndroid") {
         dependsOn("generatePatchesList")
-        finalizedBy("publishBundle", "syncPublishedMetadata")
+        finalizedBy("publishBundle")
     }
 }
