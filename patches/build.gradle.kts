@@ -37,6 +37,7 @@ tasks {
 
         classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
         mainClass.set("util.PatchListGeneratorKt")
+        args(project.version.toString())
     }
 
     // Morphe Manager reads the patch catalog from inside the bundle, and the

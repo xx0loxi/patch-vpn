@@ -13,14 +13,17 @@ import java.io.File
 import java.net.URLClassLoader
 import java.util.jar.Manifest
 
-fun main() {
+fun main(args: Array<String>) {
+    val version = args.firstOrNull()
     val patchFiles = setOf(
         File("build/libs/").listFiles { file ->
             val fileName = file.name
             !fileName.contains("javadoc") &&
                     !fileName.contains("sources") &&
-                    fileName.endsWith(".mpp")
-        }!!.first()
+                    fileName.endsWith(".mpp") &&
+                    (version == null || fileName == "patches-$version.mpp")
+        }!!.maxByOrNull { it.lastModified() }
+            ?: error("No patch bundle found in build/libs")
     )
     val loadedPatches = loadPatchesFromJar(patchFiles)
     val patchClassLoader = URLClassLoader(patchFiles.map { it.toURI().toURL() }.toTypedArray())

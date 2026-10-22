@@ -7,7 +7,7 @@ import app.morphe.patcher.patch.SupportedAbi
 
 object Constants {
     val WARP_COMPATIBILITY = Compatibility(
-        name = "1.1.1.1 + WARP: Safer Internet",
+        name = "1.1.1.1",
         packageName = "com.cloudflare.onedotonedotonedotone",
         apkFileType = ApkFileType.APKM,
         appIconColor = 0xF06C6C,
