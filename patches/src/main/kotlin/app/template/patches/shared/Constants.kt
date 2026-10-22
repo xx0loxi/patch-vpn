@@ -13,7 +13,13 @@ object Constants {
         appIconColor = 0xF06C6C,
         targets = listOf(
             AppTarget(
-                version = "6.38.11"
+                version = "6.38.9"
+            ),
+            AppTarget(
+                version = "6.38.11",
+                // The Morphe download API resolves 6.38.11 to a dead Uptodown page,
+                // so keep it available but recommend the downloadable 6.38.9 build.
+                isExperimental = true
             )
         )
     )
